@@ -1,0 +1,34 @@
+@media (pointer: fine){/******************************************
+ * Navigation
+ ******************************************/
+footer {
+  background-color: #170cff;
+  height: 260px;
+  margin-top:85px ;
+  padding-top: 50px;
+}
+.category{
+  width: 230px;
+  color: #FFFFFF;
+
+}
+.category-title{
+  font-size: 14px;
+  font-weight: bold;
+}
+.link-list{
+  margin-top: 40px;
+
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+
+}
+.footer-link{
+  opacity: 0.6;
+  padding-bottom: 10px;
+}
+/********************
+ * Alternatives - Responsive
+ ********************/
+}

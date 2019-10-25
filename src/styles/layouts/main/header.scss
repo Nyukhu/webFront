@@ -1,0 +1,70 @@
+@media (pointer: fine){/******************************************
+ * Header
+ ******************************************/
+.header{
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+}
+.nav-links{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  font-size: 15px;
+}
+.nav-links a{
+  text-decoration: none;
+}
+li{
+  text-decoration: none;
+}
+.nav-link{
+  margin-right: 20px;
+  display: flex;
+  color: rgba(255,255,255,0.6);
+
+  text-decoration: none;
+  height: 95px;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-color: transparent;
+
+}
+.highlighted-nav-item{
+  color: white;
+
+}
+
+.selected-nav-item{
+  border-color: white;
+  color: white;
+
+}
+.align-right{
+  margin-left: auto;
+}
+.deco-plus{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+}
+
+
+/********************
+ * Alternatives - Responsive
+ ********************/
+}

@@ -1,0 +1,132 @@
+@media (pointer: coarse) {
+  .best-sellers{
+    position: relative;
+    z-index: 2;
+    padding-top: 50px ;
+    padding-bottom: 42px ;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .best-seller-header{
+    margin-top: -100px;
+    color: #555555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+
+  }
+  .section-title{
+    font-size: 24px;
+  }
+  .sort-field{
+
+  }
+  .sort-label{
+  }
+  .sort-select{
+    height: 35px;
+    width: 115px;
+    box-shadow: 1px 1px 1px #a6a6a65f, 2px 1px 1px #a6a6a610;
+    appearance: none;
+    padding: 0 5px 0 5px;
+
+
+  }
+  .white-sort{
+    background-image: url("/static/sort-arrow-grey.PNG");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+
+  .product-slider{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  .slider-arrow{
+    border: none;
+    background-color: transparent;
+  }
+  .left-arrow{
+    position: absolute;
+    left: 10px;
+  }
+  .right-arrow{
+    position: absolute;
+    right: 10px;
+  }
+  .slider-content{
+
+
+  }
+  .product-card{
+    width: 180px;
+    height: 235px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  }
+  .product-card-image{
+    width: 150px;
+    height: 88px;
+    background-color: #e6e6e6;
+    padding: 15px;
+  }
+  .product-card-info{
+    background-color: #efefef;
+    color: #555555;
+    padding: 15px 11px 0 15px;
+    height: 91px;
+    border-bottom-color: #d6d6d6;
+
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .product-card-specs{
+
+    background-color: #efefef;
+    color: #555555;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .product-info-title{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 13px;
+
+  }
+  .product-stock{
+
+    color: #c6c6c6;
+    font-size: 11px;
+    justify-self: flex-end;
+    align-self: flex-end;
+
+  }
+  .red-border{
+    border-bottom-color: #ff3f0c;
+
+  }
+  .red-text{
+    color: #ff3f0c;
+  }
+
+
+
+}

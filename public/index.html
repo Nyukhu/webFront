@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ocitocine Starter</title>
+</head>
+<body>
+<header class="header content-center-align">
+	<nav class="section-content">
+		<ul class="nav-links">
+			<li>
+				<a href="">
+					<div class="nav-link selected-nav-item">
+						Accueil
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="nav-link">
+						En cours
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="nav-link">
+						Historique
+					</div>
+				</a>
+			</li>
+			<li class="align-right">
+				<a href="">
+					<div class="nav-link highlighted-nav-item">
+						Sophie Lopez <span class="deco-plus">+</span>
+					</div>
+				</a>
+			</li>
+			<li>
+
+				<div class="nav-link">
+					|
+				</div>
+
+			</li>
+			<li>
+				<a href="">
+					<div class="nav-link highlighted-nav-item">
+						Déconnexion
+					</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section class="product content-center-align auto-slider">
+		<img class="product-image" src="/static/Product.png" alt="nom du produit">
+		<div class="section-content product-section-content col-display">
+			<div class="product-info">
+				<h2 class="product-name"></h2>
+				<div class="product-specs">
+					<p class="product-technical-specs"></p>
+					<p class="product-color"></p>
+				</div>
+			</div>
+			<button class="order-button">commander <img src="/static/white-arrow.png" alt=""> </button>
+		</div>
+	</section>
+	<section class="best-sellers content-center-align">
+		<div class="section-content col-display">
+			<div class="best-seller-header">
+				<span class="section-title">Best-Seller</span>
+				<div class="sort-field">
+					<label class="sort-label" for="">trier par :</label>
+					<select class="sort-select white-sort" name="" id="">
+						<option value="Stock">stock</option>
+						<option value="Prix">prix</option>
+
+					</select>
+				</div>
+
+			</div>
+			<div class="product-slider">
+				<button class="left-arrow slider-arrow"><img src="/static/Gauche.png" alt=""> </button>
+				<div class="slider-content arrow-slider">
+
+				</div>
+				<button class="right-arrow slider-arrow"><img src="/static/Droite.png" alt=""></button>
+			</div>
+		</div>
+	</section>
+	<section class="news ">
+		<div class="section-content col-display">
+			<div class="news-content-center-align">
+				<span class="news-section-title">Nouvautés</span>
+				<div class="news-slider">
+					<article class="news-item">
+						<img class="news-image" src="/static/Product-news.png" alt="">
+						<div class="news-content">
+							<h1 class="news-title">Nom du nouveau modèle</h1>
+							<p class="news-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eleifend velit. Aliquam imperdiet mollis lorem a tempor. Duis condimentum sem eu risus faucibus, nec laoreet leo pellentesque. Etiam lorem ex, hendrerit nec erat at, gravida eleifend orci.
+							</p>
+							<button class="order-button black">commander<img src="/static/black-arrow.png" alt=""></button>
+
+						</div>
+					</article>
+				</div>
+				<ul class="news-thumbnail-list">
+					<li><img id="item-0" class="news-thumbnail"  alt=""></li>
+					<li><img id="item-1" class="news-thumbnail" alt=""></li>
+					<li><img id="item-2" class="news-thumbnail "  alt=""></li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+	<section class="order-history">
+		<div class="section-content row-display">
+			<div class="order">
+				<span class="order-section-title">Historique de vos commandes</span>
+				<div class="order-list">
+					<article class="list-item">
+							<div class="list-item-picture">
+								<div class="round-image user-image-2 border-red"></div>
+								<div class="list-item-info red-bg"><img src="/static/INFO.png" alt=""></div>
+							</div>
+							<div class="list-item-information">
+								<h2 class="list-item-title">Commande n°365412</h2>
+								<p class="list-item-text"> par <span class="order-user">Vous</span> le <span class="order-date">02 février 2015</span> </p>
+								<p class="list-item-state red-text">attention requise</p>
+							</div>
+							<button class="order-button border-red grey-text order-view">consulter <img src="/static/red-arrowpng.png" alt=""> </button>
+
+						</article>
+					<article class="list-item">
+						<div class="list-item-picture">
+							<div class="round-image user-image-1 border-grey"></div>
+							<div class="list-item-info grey-bg"><img src="/static/TRUCK.png" alt=""></div>
+						</div>
+						<div class="list-item-information">
+							<h2 class="list-item-title">Commande n°365412</h2>
+							<p class="list-item-text"> par <span class="order-user">Vous</span> le <span class="order-date">02 février 2015</span> </p>
+							<p class="list-item-state grey-text">en cours d'expidition</p>
+						</div>
+
+					</article>
+					<article class="list-item">
+						<div class="list-item-picture">
+							<div class="round-image user-image-2 border-green"></div>
+							<div class="list-item-info green-bg"><img src="/static/Tick.png" alt=""></div>
+						</div>
+						<div class="list-item-information">
+							<h2 class="list-item-title">Commande n°365412</h2>
+							<p class="list-item-text"> par <span class="order-user">Vous</span> le <span class="order-date">02 février 2015</span> </p>
+							<p class="list-item-state green-text">receptionnée</p>
+						</div>
+
+					</article>
+					<article class="list-item last-list-item">
+						<div class="list-item-picture">
+							<div class="round-image user-image-1 border-green"></div>
+							<div class="list-item-info green-bg"><img src="/static/Tick.png" alt=""></div>
+						</div>
+						<div class="list-item-information">
+							<h2 class="list-item-title">Commande n°365412</h2>
+							<p class="list-item-text"> par <span class="order-user">Vous</span> le <span class="order-date">02 février 2015</span> </p>
+							<p class="list-item-state green-text">receptionnée</p>
+						</div>
+
+					</article>
+					</div>
+				<button class="order-history-button">Voir l'historique <img src="/static/black-arrow.png" alt=""></button>
+			</div>
+			<div class="course">
+				<span class="course-section-title">Formation liés</span>
+				<div class="course-list">
+					<article class="list-item">
+						<div class="list-item-picture">
+							<div class="round-image formation-image border-grey"></div>
+						</div>
+						<div class="list-item-information">
+							<span class="course-category">force de vente</span>
+							<h1 class="course-title">Optimiser vos campagnes publicitaires</h1>
+							<span class="course-suggestion">recommandée</span>
+						</div>
+					</article>
+					<article class="list-item last-list-item">
+						<div class="list-item-picture">
+							<div class="round-image formation-image border-grey"></div>
+						</div>
+						<div class="list-item-information">
+							<span class="course-category">force de vente</span>
+							<h1 class="course-title">Optimiser vos campagnes publicitaires</h1>
+							<span class="course-suggestion">recommandée</span>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sales-graph">
+		<div class="section-content">
+			<div class="sales-graph-header">
+				<span class="sales-graph-title">Ventes Commandes</span>
+				<div class="select-container">
+					<label for="" class="chart-select-label">modèle : </label>
+					<select name="" class="sort-select chart-select">
+						<option value="">Nom du modèle un peu long</option>
+					</select>
+				</div>
+				<div class="select-container">
+					<label for="" class="chart-select-label">couleur : </label>
+					<select name="" class="sort-select chart-select">
+						<option value="">Noir</option>
+					</select>
+				</div>
+			</div>
+			<div class="graph-container">
+				<img src="/static/chart.PNG" alt="" class="graph">
+			</div>
+		</div>
+	</section>
+	<section class="product-model-list">
+		<div class="section-content">
+			<div class="product-model-header">
+				<span class="all-models">Tous les modèles</span>
+
+				<input type="text" name="" class="model-search-field" placeholder="Rechercher un modèle">
+
+				<div class="select-container all-product-select ">
+					<label for="">trier par:</label>
+					<select name="" id="" class="sort-select all-product-sort white-sort">
+						<option value="">Stock</option>
+					</select>
+				</div>
+			</div>
+			<div class="slider-content all-products-content">
+					<article class="product-card">
+						<img class="product-card-image" src="/static/Product1.png" alt=""/>
+						<div class="product-card-info red-border">
+							<h1 class="product-info-title">Nom du modele un peu long</h1>
+							<div class="product-card-specs">
+								<p>Manuel - Vert Gazon</p>
+							</div>
+							<div class="product-stock red-text"> 0 en stock</div>
+						</div>
+
+					</article>
+					<article class="product-card">
+						<img class="product-card-image" src="/static/Product2.png" alt=""></img>
+						<div class="product-card-info red-border">
+							<h1 class="product-info-title">Un autre modèle un autre nom</h1>
+							<div class="product-card-specs">
+								<p>Semi-Automatique - Blanc</p>
+							</div>
+							<div class="product-stock red-text"> 1 en stock</div>
+						</div>
+
+					</article>
+					<article class="product-card">
+						<img class="product-card-image" src="/static/Product3.png" alt=""></img>
+						<div class="product-card-info">
+							<h1 class="product-info-title">Nom du modèle toujours long</h1>
+							<div class="product-card-specs">
+								<p>Semi-Automatique - Noir</p>
+							</div>
+							<div class="product-stock"> 4 en stock</div>
+						</div>
+
+					</article>
+					<article class="product-card">
+						<img class="product-card-image" src="/static/Product4.png" alt=""></img>
+						<div class="product-card-info">
+							<h1 class="product-info-title">Modèle Nombizarrelong</h1>
+							<div class="product-card-specs">
+								<p>Manuel - Rouge</p>
+							</div>
+							<div class="product-stock"> 4 en stock</div>
+
+						</div>
+
+					</article>
+					<article class="product-card">
+						<img class="product-card-image" src="/static/Product5.png" alt=""></img>
+						<div class="product-card-info">
+							<h1 class="product-info-title">Dernier modèle de la liste</h1>
+							<div class="product-card-specs">
+								<p>Automatique - Blanc</p>
+							</div>
+							<div class="product-stock"> 5 en stock</div>
+
+						</div>
+
+					</article>
+				</div>
+			<div class="button-container">
+				<button class="order-history-button all-models-button"> <img src="/static/down-arrow.png" alt=""> Voir tout les modèles </button>
+			</div>
+
+		</div>
+	</section>
+</main>
+
+<footer>
+	<section class="section-content row-display">
+		<div class="category">
+			<span class="category-title">Navigation</span>
+			<ul class="link-list">
+				<li class="footer-link">actualités</li>
+				<li class="footer-link">annuaire</li>
+				<li class="footer-link">app store</li>
+				<li class="footer-link">commandes</li>
+				<li class="footer-link">formations</li>
+				<li class="footer-link">publicités</li>
+			</ul>
+		</div>
+		<div class="category">
+			<span class="category title">Mon Compte</span>
+			<ul class="link-list">
+				<li class="footer-link">contacts favoris</li>
+				<li class="footer-link">commandes</li>
+				<li class="footer-link">formations</li>
+				<li class="footer-link">préférences</li>
+				<li class="footer-link">profil</li>
+				<li class="footer-link">publicités</li>
+			</ul>
+		</div>
+		<div class="category">
+			<span class="category title">Applications</span>
+			<ul class="link-list">
+				<li class="footer-link">Catalogue</li>
+				<li class="footer-link">App SAV</li>
+				<li class="footer-link">App garantie</li>
+				<li class="footer-link">User Managment</li>
+				<li class="footer-link">CRM</li>
+				<li class="footer-link">ERP</li>
+			</ul>
+		</div>
+		<div class="category">
+			<span class="category title">Liens</span>
+			<ul class="link-list">
+				<li class="footer-link">à propos</li>
+				<li class="footer-link">condition d'utilisation</li>
+				<li class="footer-link">mentions légales</li>
+				<li class="footer-link">intranet</li>
+				<li class="footer-link">site.com</li>
+			</ul>
+		</div>
+
+	</section>
+</footer>
+
+
+</body>
+</html>
