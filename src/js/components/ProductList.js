@@ -19,17 +19,31 @@ import anime from 'animejs/lib/anime.es.js';
     if (!this.deployed){
       this.itemContainer.innerHTML = null;
       for (let i = 0; i < 5; i++) {
-        this.itemContainer.appendChild(this.createItemHtml(i)) ;
+        let child = this.createItemHtml(i);
+        child.classList.add("animated");
+        this.itemContainer.appendChild(child) ;
+
       }
     }
     else{
       this.itemContainer.innerHTML = null;
 
       for (let i = 0; i < this.correspondingElements.length ; i++) {
-        this.itemContainer.appendChild(this.createItemHtml(i));
+        let child = this.createItemHtml(i);
+        child.classList.add("animated");
+        this.itemContainer.appendChild(child);
       }
     }
+    anime.set('.animated', {
+      translateY: 10,
+    });
+    anime({
+      targets: '.animated',
+      translateY: 0,
+      opacity:[0,1],
+      delay: anime.stagger(10)
 
+    });
   }
 
   setupEvents(){
