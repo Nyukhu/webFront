@@ -1,4 +1,5 @@
 /* eslint-disable */
+import anime from 'animejs/lib/anime.es.js';
 
  export  default class ProductList {
   constructor(el, items) {
@@ -9,43 +10,63 @@
     this.itemContainer = this.el.querySelector('.all-products-content');
     this.setupEvents();
     this.correspondingElements = this.items;
-    this.renderFiveItems();
+    this.renderItems();
 
     this.deployed = false
   }
 
-  renderFiveItems(){
-    for (let i = 0; i < 5; i++) {
-      this.createItemHtml(i);
+  renderItems(){
+    if (!this.deployed){
+      this.itemContainer.innerHTML = null;
+      for (let i = 0; i < 5; i++) {
+        this.itemContainer.appendChild(this.createItemHtml(i)) ;
+      }
     }
-  }
-  renderAll(){
-    for (let i = 0; i < this.correspondingElements ; i++) {
-      this.createItemHtml(i);
+    else{
+      this.itemContainer.innerHTML = null;
+
+      for (let i = 0; i < this.correspondingElements.length ; i++) {
+        this.itemContainer.appendChild(this.createItemHtml(i));
+      }
     }
+
   }
+
   setupEvents(){
     this.showMoreButton.addEventListener('click',this.deployItemList.bind(this));
     this.searchField.addEventListener('keyup',this.updateItemList.bind(this));
   }
   updateItemList(){
-    console.log("etetet", this.searchField.value)
+    console.log("etetet", this.searchField.value);
+    this.correspondingElements = [];
+    for (let i = 0; i < this.items.length; i++) {
+        if (this.items[i].title.indexOf(this.searchField.value) != -1){
+          this.correspondingElements.push(this.items[i]);
+        }
+    }
+    console.log(this.correspondingElements)
+    this.renderItems();
+
+
   }
   deployItemList(){
+    let arrow = this.el.querySelector('.arrow-img');
+
     if (!this.deployed){
-      this.itemContainer.style.height = '200vh';
+      this.itemContainer.style.height = 'fit-content';
       this.deployed = true;
-      this.renderAll();
+      arrow.style.transform = "rotate(180deg)";
+
       console.log('deployed')
     }
     else
     {
-      this.itemContainer.style.height = '50vh';
+      this.itemContainer.style.height = 'fit-content';
       this.deployed = false;
-      this.renderFiveItems();
       console.log('closed')
-
+      arrow.style.transform = "rotate(0deg)";
     }
+    this.renderItems();
 
   }
 

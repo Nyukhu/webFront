@@ -37,6 +37,11 @@
 
 
 }
+  .all-products-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 .button-container{
   display: flex;
   flex-direction: column;
