@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: row ;
   margin-bottom: 45px;
+  position: relative;
 
 }
 .all-models{
@@ -62,5 +63,13 @@
   left: calc(50% - 925px /2);
   z-index: -1;
 }
-
+  .search-icon{
+    height: 20px ;
+    width: 20px;
+    position: absolute;
+    left: 425px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
 }
