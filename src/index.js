@@ -96,5 +96,5 @@ Array.from(document.body.querySelectorAll('.news')).forEach((bubbleSlider) => {
 });
 
 
-let productList = document.querySelector('.all-products-content');
-let newProductList = new ProductList(allProducts);
+let productList = document.querySelector('.product-model-list');
+let newProductList = new ProductList(productList,allProducts);
