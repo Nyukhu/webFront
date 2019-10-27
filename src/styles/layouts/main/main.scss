@@ -186,10 +186,10 @@ main {
 }
 .product-card{
   width: 180px;
-  height: 235px;
   margin-right: 5px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
 
 }
 .product-card-image{
@@ -202,7 +202,6 @@ main {
   background-color: #efefef;
   color: #555555;
   padding: 15px 11px 0 15px;
-  height: 91px;
   border-bottom-color: #d6d6d6;
 
   border-bottom-style: solid;
@@ -210,6 +209,8 @@ main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
 
 }
 .product-card-specs{
@@ -230,8 +231,8 @@ main {
 
   color: #c6c6c6;
   font-size: 11px;
-  justify-self: flex-end;
   align-self: flex-end;
+  margin-bottom: 8px;
 
 }
 .red-border{

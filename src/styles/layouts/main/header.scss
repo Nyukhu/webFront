@@ -9,6 +9,24 @@
   border-bottom-color: white;
   border-bottom-style: solid;
 }
+  .hamburger{
+    display: none;
+  }
+  .pipe{
+    display: none;
+    margin-right: 20px;
+    display: flex;
+    color: rgba(255,255,255,0.6);
+
+    text-decoration: none;
+    height: 95px;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-color: transparent;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
 .nav-links{
   margin: 0;
   padding: 0;
@@ -36,16 +54,22 @@ li{
   border-bottom-style: solid;
   border-bottom-width: 5px;
   border-color: transparent;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 }
+
+  .nav-link:hover{
+    border-color: white;
+    color: white;
+
+
+  }
 .highlighted-nav-item{
-  color: white;
 
 }
 
 .selected-nav-item{
-  border-color: white;
-  color: white;
+
 
 }
 .align-right{

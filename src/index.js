@@ -98,3 +98,33 @@ Array.from(document.body.querySelectorAll('.news')).forEach((bubbleSlider) => {
 
 let productList = document.querySelector('.product-model-list');
 let newProductList = new ProductList(productList,allProducts);
+
+let chartSelect = document.querySelector('.chart-select');
+for (let i = 0; i < allProducts.length; i++) {
+
+  let opt = document.createElement('option');
+  if (allProducts[i].title.length > 10){
+    opt.textContent = allProducts[i].title.substr(0,10) + '...'
+  }
+  else{
+    opt.textContent = allProducts[i].title;
+  }
+  chartSelect.appendChild(opt);
+}
+
+let hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+  let navLinks = document.querySelectorAll('.nav-link').forEach((navItem) => {
+    if (navItem.style.display == 'none'){
+      navItem.style.display = 'flex';
+      hamburger.style.color = 'black';
+
+    }
+    else{
+      navItem.style.display = 'none';
+      hamburger.style.color = 'white';
+
+    }
+  })
+
+});

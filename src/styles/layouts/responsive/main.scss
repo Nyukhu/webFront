@@ -3,6 +3,7 @@
     display: block;
     position: relative;
     z-index: 2;
+    overflow: hidden;
   }
   .content-center-align{
     width: 100%;
@@ -38,8 +39,8 @@
   .product-image{
     margin: -200px auto 0 auto;
     height: 691px;
-    position: fixed;
-    left: -800px;
+    position: absolute;
+    left: -730px;
 
     top: 253px;
     z-index: -2;
